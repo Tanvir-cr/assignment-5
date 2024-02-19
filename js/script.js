@@ -1,9 +1,6 @@
 let clickedButtonsCount = 0;
 const seatSerial = document.getElementById("seat-serial-section");
 let selectedSeats = [];
-
-// Seat-BUtton-Function
-
 seatSerial.addEventListener("click", function (e) {
   if (e.target.tagName === "BUTTON") {
     const buttonText = e.target.innerText;
@@ -41,9 +38,6 @@ seatSerial.addEventListener("click", function (e) {
     }
   }
 });
-
-// Coupon-Submit-function
-
 couponBtn.addEventListener("click", () => {
   let couponBtn = document.getElementById("couponBtn");
   let couponInput = document.getElementById("couponInput");
@@ -69,9 +63,6 @@ couponBtn.addEventListener("click", () => {
   }
 });
 
-// grandTotal
-
-
 function buyTicket() {
   const seatSection = document.getElementById("buyTicket");
   seatSection.scrollIntoView({ behavior: "smooth" });
@@ -84,16 +75,15 @@ function modalHide() {
 
 function formSubmit(e) {
   e.preventDefault();
-
-  // name
   let name = document.getElementById("name");
   let nameValue = name.value;
-  // number
+
   let number = document.getElementById("PhoneNum");
   let numberValue = number.value;
-  // email
+
   let email = document.getElementById("email");
   let emailValue = email.value;
+
   let value = getValue("seatPurchase");
 
   if (numberValue.length == 11 && numberValue > 0 && value > 0 && nameValue !== "" &&  emailValue !== "") {
@@ -103,6 +93,7 @@ function formSubmit(e) {
     inputs.forEach(function(input) {
       input.value = '';
     });
+    
   } else {
     alert("Please fill in all required fields.");
   }
