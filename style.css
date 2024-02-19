@@ -1,0 +1,33 @@
+/* custom css  */
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+  .root {
+    margin: 0;
+    padding: 0;
+  }
+  .raleway-font {
+    font-family: "Raleway", sans-serif;
+  }
+  .inter-font {
+    font-family: "Inter", sans-serif;
+  }
+  .color-prime {
+    color: #1dd100;
+  }
+  .bg-prime {
+    background-color: #1dd100;
+  }
+  .border-fill {
+    border: 1px solid;
+    border-color: #1dd10066;
+  }
+  .color-second {
+    color: #1dd1001a;
+  }
+  .banner-bg {
+    background: linear-gradient(
+        180deg,
+        rgba(3, 7, 18, 0.5),
+        rgba(3, 7, 18, 0) 100%
+      ),
+      url("images/banner.png");
+  }
